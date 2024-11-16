@@ -23,28 +23,39 @@ main p {
 
 main table {
     font-family: 'Akrobat';
-    font-size: 1.1rem;
-    color: #666;
-    text-align: center;
-    margin: 1rem auto;
-    line-height: 1.5;
-    border: 1px solid #333;
+    font-size: 1.15rem;
+    color: #555;
+    text-align: left;
+    margin: 1.5rem auto;
+    line-height: 1.6;
+    border-collapse: collapse;
+    width: 90%;
 }
 
 main table th {
-    background-color: #cfc682;
-    color: #fff;
-    padding: .5rem 2rem;
-}   
+    background-color: #ececb1;
+    color: #333;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    border: 1px solid #d9d4a0;
+}
 
 main table td {
-    background-color: #f4f4f4;
-    padding: .5rem 2rem;
+    background-color: #faf8e7;
+    color: #333;
+    padding: 0.8rem;
+    border: 1px solid #d7d3a5;
 }
 
 main table tr:nth-child(even) td {
-    background-color: #f0f0e2;
+    background-color: #e6e5df;
 }
+
+main table tr:hover td {
+    background-color: #e2dba4;
+    color: #333;
+}
+
 
 main .animate {
     /* display: inline-block; */
@@ -67,7 +78,6 @@ main .animate span {
     }
 }
 
-/* Adaugă o întârziere diferită pentru fiecare literă */
 main .animate span:nth-child(5n + 1) {
     animation-delay: 0s;
 }

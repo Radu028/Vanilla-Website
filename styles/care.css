@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Akrobat', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
@@ -17,21 +17,21 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-main h1 {
+main h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #b68d00;
 }
 
-main h2 {
+main h3 {
     font-size: 1.5rem;
     margin-top: 20px;
-    color: #e6ac00;
+    color: #3f3823;
     text-transform: uppercase;
 }
 
 main p {
-    font-size: 1rem;
+    font-size: 1.15rem;
     margin: 10px 0;
     text-align: justify;
 }
@@ -45,6 +45,7 @@ main ul {
 
 main ul li {
     margin-bottom: 10px;
+    font-size: 1.1rem;
 }
 
 main section {
