@@ -1,0 +1,8 @@
+footer {
+    text-align: center;
+    background-color: rgba(200, 160, 0, 0.1);
+    border-top: 1px solid #979797;
+    font-family: 'Akrobat';
+    padding: .5em;
+    bottom: 0;
+}

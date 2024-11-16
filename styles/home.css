@@ -1,0 +1,89 @@
+main h1 {
+    font-family: 'Akrobat ExtraBold';
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+main h2 {
+    font-family: 'Akrobat Bold';
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+main p {
+    font-family: 'Akrobat';
+    font-size: 1.1rem;
+    color: #666;
+    text-align: center;
+    margin: 1rem 8rem;
+    line-height: 1.5;
+}
+
+main table {
+    font-family: 'Akrobat';
+    font-size: 1.1rem;
+    color: #666;
+    text-align: center;
+    margin: 1rem auto;
+    line-height: 1.5;
+    border: 1px solid #333;
+}
+
+main table th {
+    background-color: #cfc682;
+    color: #fff;
+    padding: .5rem 2rem;
+}   
+
+main table td {
+    background-color: #f4f4f4;
+    padding: .5rem 2rem;
+}
+
+main table tr:nth-child(even) td {
+    background-color: #f0f0e2;
+}
+
+main .animate {
+    /* display: inline-block; */
+    display: flex;
+    justify-content: center;
+    white-space: pre;
+}
+
+main .animate span {
+    display: inline-block;
+    animation: float 1500ms ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Adaugă o întârziere diferită pentru fiecare literă */
+main .animate span:nth-child(5n + 1) {
+    animation-delay: 0s;
+}
+
+main .animate span:nth-child(5n + 2) {
+    animation-delay: 0.1s;
+}
+
+main .animate span:nth-child(5n + 3) {
+    animation-delay: 0.2s;
+}
+
+main .animate span:nth-child(5n + 4) {
+    animation-delay: 0.3s;
+}
+
+main .animate span:nth-child(5n) {
+    animation-delay: 0.4s;
+}

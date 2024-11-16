@@ -1,0 +1,13 @@
+header {
+    text-align: center;
+    background-color: rgba(200, 160, 0, 0.1);
+    border-bottom: 1px solid #979797;
+}
+
+header h1 {
+    font-family: 'Akrobat Black';
+    font-size: 3em;
+    padding: .8em;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.8);
+}

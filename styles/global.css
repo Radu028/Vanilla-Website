@@ -1,0 +1,15 @@
+@import url('https://fonts.cdnfonts.com/css/akrobat');
+
+html,
+body {
+    scroll-behavior: smooth;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
