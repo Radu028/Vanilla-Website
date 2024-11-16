@@ -30,29 +30,32 @@ main table {
     line-height: 1.6;
     border-collapse: collapse;
     width: 90%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 main table th {
-    background-color: #ececb1;
-    color: #333;
+    background-color: #ffd966;
+    color: #3f3823;
     padding: 0.8rem;
     text-transform: uppercase;
-    border: 1px solid #d9d4a0;
+    border: 1px solid #ffd966;
 }
 
 main table td {
-    background-color: #faf8e7;
+    background-color: #ffffff;
     color: #333;
     padding: 0.8rem;
-    border: 1px solid #d7d3a5;
+    border: 1px solid #ffd966;
 }
 
 main table tr:nth-child(even) td {
-    background-color: #e6e5df;
+    background-color: #f9f9f9;
 }
 
 main table tr:hover td {
-    background-color: #e2dba4;
+    background-color: #ffe699;
     color: #333;
 }
 
