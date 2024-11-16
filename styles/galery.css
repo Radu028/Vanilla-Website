@@ -110,3 +110,24 @@
     font-size: 1.2em;
     color: #666;
 }
+
+@media (max-width: 700px) {
+    #grid-page {
+        grid-template-columns: repeat(2, 18em);
+        grid-template-rows: repeat(7, 12em);
+        grid-template-areas:
+            "norwegian-forest   british-shorhair"
+            "norwegian-forest   scottish-fold"
+            "bengal             scottish-fold"
+            "burmese            burmese"
+            "maine-coon         ragdoll"
+            "siamese            ragdoll"
+            "persian            persian"
+        ;
+        grid-gap: 1em;
+    }
+
+    #grid-page .grid-item.grid-item.persian img {
+        object-position: 10% 40%;
+    }
+}

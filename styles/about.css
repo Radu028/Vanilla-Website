@@ -94,3 +94,42 @@ main > p {
     grid-area: info;
     transform: rotateY(10deg) translateZ(0);
 }
+
+@media (max-width: 700px) {
+    main > p {
+        margin: 2em 2em;
+        text-align: center;
+    }
+    
+    #about-grid {
+        margin: 0 2em;
+    }
+
+    #about-grid .row {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "info"
+            "image" !important;
+    }
+
+    #about-grid .row img {
+        width: 100%;
+        transform: none !important;
+        grid-area: image;
+        color: black;
+    }
+
+    #about-grid .row .info {
+        transform: none !important;
+        text-align: center;
+        grid-area: info;
+    }
+
+    #about-grid .row .info h3 {
+        text-align: center;
+    }
+
+    #about-grid .row .info ul {
+        text-align: center;
+    }
+}
