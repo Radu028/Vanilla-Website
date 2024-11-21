@@ -11,10 +11,6 @@ main {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background: #ffffff;
-    border: 2px solid #ffd966;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 main h2 {
@@ -44,14 +40,18 @@ main ul {
 }
 
 main ul li {
-    margin-bottom: 10px;
+    margin-bottom: 1em;
     font-size: 1.1rem;
 }
 
-main section {
+main .general-info,
+main .specific-info {
+    background: #ffffff;
+    border: 2px solid #ffd966;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ffd966;
 }
 
 main a {
@@ -61,4 +61,86 @@ main a {
 
 main a:hover {
     text-decoration: underline;
+}
+
+main section {
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ffd966;
+    margin: 0 2em;
+}
+
+main section:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+main .specific-info section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "title title"
+        "info info"
+        "breed weight"
+    ;
+    gap: 1em;
+}
+
+main .specific-info section h3 {
+    grid-area: title;
+    /* text-align: center; */
+}
+
+main .specific-info section p {
+    grid-area: info;
+}
+
+main .specific-info section .input-group:first-child {
+    grid-area: breed;
+}
+
+main .specific-info section .input-group:last-child {
+    grid-area: weight;
+}
+
+main .specific-info section .input-group {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "label"
+        "input"
+    ;
+    gap: .2em;
+}
+
+main .specific-info section label {
+    font-family: 'Akrobat SemiBold', sans-serif;
+    font-size: 1.25em;
+    grid-area: label;
+}
+
+main .specific-info section select,
+main .specific-info section input {
+    grid-area: input;
+    border: 1px solid #ffd966;
+    border-radius: 4px;
+    font-family: 'Akrobat', sans-serif;
+    font-size: 1.1em;
+    width: 16em;
+    height: 2em;
+    margin: 0 auto;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+main .specific-info section select:focus,
+main .specific-info section input:focus {
+    outline-color: #e6ac00;
+}
+
+main .specific-info section select:active,
+main .specific-info section input:active {
+    transform: scale(.98);
 }
