@@ -1,11 +1,11 @@
-main h1 {
+main h2 {
     font-family: 'Akrobat ExtraBold';
     font-size: 2rem;
     color: #333;
     text-align: center;
 }
 
-main h2 {
+main h3 {
     font-family: 'Akrobat Bold';
     font-size: 1.5rem;
     color: #333;

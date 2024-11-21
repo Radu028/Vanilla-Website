@@ -53,7 +53,7 @@
 }
 
 #grid-page .grid-item.maine-coon {
-    grid: maine-coon;
+    grid-area: maine-coon;
 }
 
 #grid-page .grid-item.maine-coon img {

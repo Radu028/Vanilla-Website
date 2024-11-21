@@ -22,7 +22,7 @@
     font-size: 1.2em;
     margin: min(1.5%, 1rem);
     box-sizing: border-box;
-    will-change: transform color;
+    will-change: transform, color;
     transition: all 200ms ease-in-out;
 }
 
