@@ -144,3 +144,20 @@ main .specific-info section select:active,
 main .specific-info section input:active {
     transform: scale(.98);
 }
+
+@media (max-width: 700px) {
+    main {
+        width: 80%;
+    }
+
+    main .specific-info section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "title"
+            "info"
+            "breed"
+            "weight"
+        ;
+    }
+}
