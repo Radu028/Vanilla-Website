@@ -62,6 +62,7 @@ main table tr:hover td {
 
 main .animate {
     /* display: inline-block; */
+    font-family: 'Akrobat';
     display: flex;
     justify-content: center;
     white-space: pre;
