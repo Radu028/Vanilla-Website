@@ -140,6 +140,27 @@ main .specific-info section input:active {
   transform: scale(0.98);
 }
 
+.specific-info #weight-error {
+  /* TODO: Make this doesn't move the input item */
+  color: red;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.specific-info button {
+  /* TODO: Centralize this */
+  background: #ffd966;
+  border: none;
+  border-radius: 4px;
+  color: #3f3823;
+  cursor: pointer;
+  font-family: 'Akrobat SemiBold', sans-serif;
+  font-size: 1.25em;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  transition: transform 0.3s;
+}
+
 @media (max-width: 700px) {
   main {
     width: 80%;
