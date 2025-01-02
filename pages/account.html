@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/global.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/navbar.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+
+    <link rel="stylesheet" href="../styles/account.css" />
+    <title>Despre pisici</title>
+  </head>
+
+  <body>
+    <header id="account">
+      <h1>Despre pisici</h1>
+    </header>
+
+    <nav class="navbar">
+      <div class="dropdown">
+        <a class="page" href="./home.html">Acasa</a>
+      </div>
+      <div class="dropdown">
+        <a class="page" href="./galery.html">Galerie</a>
+      </div>
+      <div class="dropdown">
+        <a class="page" href="./about.html">Despre</a>
+        <div class="dropdown-content">
+          <a href="about.html#scottish-fold">Scottish Fold</a>
+          <a href="about.html#british-shorthair">British Shorthair</a>
+          <a href="about.html#siamese">Siameza</a>
+          <a href="about.html#persian">Persana</a>
+          <a href="about.html#maine-coon">Maine Coon</a>
+          <a href="about.html#bengal">Bengaleza</a>
+          <a href="about.html#russain-blue">Rusa Albastră</a>
+          <a href="about.html#ragdoll">Ragdoll</a>
+          <a href="about.html#norwegian">Norvegiana de Padure</a>
+          <a href="about.html#burmese">Burmese</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <a class="page active" href="#account">Cont</a>
+      </div>
+    </nav>
+
+    <form id="register-form" action="register">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required />
+
+      <label for="email">Mail:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="password">Parola:</label>
+      <input type="password" id="password" name="password" required />
+
+      <div id="gender-selection">
+        <input type="radio" id="male" name="fav_language" value="MALE" />
+        <label for="male">Barbat</label><br />
+        <input type="radio" id="female" name="fav_language" value="female" />
+        <label for="female">Femeie</label><br />
+      </div>
+
+      <input id="submit-btn" type="submit" value="Register" btn />
+    </form>
+
+    <footer>
+      <p>&copy; 2024 Despre pisici</p>
+
+      <p>Acest proiect a fost facut de Popa Radu-Stefan</p>
+    </footer>
+  </body>
+</html>

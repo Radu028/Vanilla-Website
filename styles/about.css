@@ -1,135 +1,133 @@
 main h1 {
-    font-family: 'Akrobat Bold';
-    text-align: center;
+  font-family: 'Akrobat Bold';
+  text-align: center;
 }
 
 main h2 {
-    font-family: "Akrobat Bold";
-    text-align: center;
-    margin-top: 4em;
+  font-family: 'Akrobat Bold';
+  text-align: center;
+  margin-top: 4em;
 }
 
 main > p {
-    font-family: 'Akrobat';
-    font-size: 1.1em;
-    margin: 2em 10em;
+  font-family: 'Akrobat';
+  font-size: 1.1em;
+  margin: 2em 10em;
 }
 
 #about-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2em;
-    margin: 0 8em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2em;
+  margin: 0 8em;
 }
 
 #about-grid .row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    grid-gap: 1em;
-    perspective: 1000px;
-    margin: 4em 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  grid-gap: 1em;
+  perspective: 1000px;
+  margin: 4em 0;
 }
 
 #about-grid .row img {
-    width: 80%;
-    border-radius: .2em;
-    transition: transform 500ms ease-in-out;
-    margin: 0 auto;
+  width: 80%;
+  border-radius: 0.2em;
+  transition: transform 500ms ease-in-out;
+  margin: 0 auto;
 }
 
 #about-grid .row .info {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    transform-style: preserve-3d;
-    transition: transform 500ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transform-style: preserve-3d;
+  transition: transform 500ms ease-in-out;
 }
 
 #about-grid .row .info h3 {
-    font-family: 'Akrobat Bold';
-    font-size: 1.8em;
-    text-align: left;
+  font-family: 'Akrobat Bold';
+  font-size: 1.8em;
+  text-align: left;
 }
 
 #about-grid .row .info ul {
-    font-family: 'Akrobat';
-    font-size: 1.15em;
-    text-align: left;
+  font-family: 'Akrobat';
+  font-size: 1.15em;
+  text-align: left;
 }
 
 #about-grid .row .info ul span {
-    font-family: 'Akrobat Bold';
+  font-family: 'Akrobat Bold';
 }
 
 #about-grid .row:nth-child(odd) {
-    grid-template-areas:
-        "image info";
+  grid-template-areas: 'image info';
 }
 
 #about-grid .row:nth-child(even) {
-    grid-template-areas:
-        "info image";
+  grid-template-areas: 'info image';
 }
 
 #about-grid .row:nth-child(odd) img {
-    grid-area: image;
-    transform: rotateY(10deg);
+  grid-area: image;
+  transform: rotateY(10deg);
 }
 
 #about-grid .row:nth-child(odd) .info {
-    grid-area: info;
-    transform: rotateY(-10deg) translateZ(0);
-    justify-content: right;
+  grid-area: info;
+  transform: rotateY(-10deg) translateZ(0);
+  justify-content: right;
 }
 
 #about-grid .row:nth-child(even) img {
-    grid-area: image;
-    transform: rotateY(-10deg);
+  grid-area: image;
+  transform: rotateY(-10deg);
 }
 
 #about-grid .row:nth-child(even) .info {
-    grid-area: info;
-    transform: rotateY(10deg) translateZ(0);
+  grid-area: info;
+  transform: rotateY(10deg) translateZ(0);
 }
 
 @media (max-width: 700px) {
-    main > p {
-        margin: 2em 2em;
-        text-align: center;
-    }
-    
-    #about-grid {
-        margin: 0 2em;
-    }
+  main > p {
+    margin: 2em 2em;
+    text-align: center;
+  }
 
-    #about-grid .row {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "info"
-            "image" !important;
-    }
+  #about-grid {
+    margin: 0 2em;
+  }
 
-    #about-grid .row img {
-        width: 100%;
-        transform: none !important;
-        grid-area: image;
-        color: black;
-    }
+  #about-grid .row {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'info'
+      'image' !important;
+  }
 
-    #about-grid .row .info {
-        transform: none !important;
-        text-align: center;
-        grid-area: info;
-    }
+  #about-grid .row img {
+    width: 100%;
+    transform: none !important;
+    grid-area: image;
+    color: black;
+  }
 
-    #about-grid .row .info h3 {
-        text-align: center;
-    }
+  #about-grid .row .info {
+    transform: none !important;
+    text-align: center;
+    grid-area: info;
+  }
 
-    #about-grid .row .info ul {
-        text-align: center;
-    }
+  #about-grid .row .info h3 {
+    text-align: center;
+  }
+
+  #about-grid .row .info ul {
+    text-align: center;
+  }
 }

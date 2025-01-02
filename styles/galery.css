@@ -1,133 +1,131 @@
 #grid-page {
-    margin: 2em;
-    display: grid;
-    grid-template-columns: repeat(4, 20em);
-    grid-template-rows: repeat(4, 10em);
-    grid-template-areas:
-        "norwegian-forest british-shorhair maine-coon ragdoll"
-        "norwegian-forest scottish-fold scottish-fold ragdoll"
-        "bengal scottish-fold scottish-fold persian"
-        "burmese burmese siamese persian";
-    ;
-    grid-gap: 2em;
-    justify-content: center;
+  margin: 2em;
+  display: grid;
+  grid-template-columns: repeat(4, 20em);
+  grid-template-rows: repeat(4, 10em);
+  grid-template-areas:
+    'norwegian-forest british-shorhair maine-coon ragdoll'
+    'norwegian-forest scottish-fold scottish-fold ragdoll'
+    'bengal scottish-fold scottish-fold persian'
+    'burmese burmese siamese persian';
+  grid-gap: 2em;
+  justify-content: center;
 }
 
 #grid-page .grid-item {
-    position: relative;
-    background-color: #f4f4f4;
-    /* padding: 1em; */
-    border-radius: .1em;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-family: 'Akrobat';
-    overflow: hidden;
+  position: relative;
+  background-color: #f4f4f4;
+  /* padding: 1em; */
+  border-radius: 0.1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Akrobat';
+  overflow: hidden;
 }
 
 #grid-page .grid-item h2 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #f4f4f4;
-    margin: 0 auto;
-    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f4f4f4;
+  margin: 0 auto;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 #grid-page .grid-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: .5em;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5em;
 }
 
 #grid-page .grid-item.norwegian-forest {
-    grid-area: norwegian-forest;
+  grid-area: norwegian-forest;
 }
 
 #grid-page .grid-item.norwegian-forest img {
-    object-position: 50% 20%;
+  object-position: 50% 20%;
 }
 
 #grid-page .grid-item.britih-shorthair {
-    grid-area: british-shorthair;
+  grid-area: british-shorthair;
 }
 
 #grid-page .grid-item.maine-coon {
-    grid-area: maine-coon;
+  grid-area: maine-coon;
 }
 
 #grid-page .grid-item.maine-coon img {
-    width: 120%;
-    height: 120%;
-    object-position: 50% bottom;
+  width: 120%;
+  height: 120%;
+  object-position: 50% bottom;
 }
 
 #grid-page .grid-item.scottish-fold {
-    grid-area: scottish-fold;
+  grid-area: scottish-fold;
 }
 
 #grid-page .grid-item.scottish-fold img {
-    object-position: 50% bottom;
+  object-position: 50% bottom;
 }
 
 #grid-page .grid-item.ragdoll {
-    grid-area: ragdoll;
+  grid-area: ragdoll;
 }
 
 #grid-page .grid-item.ragdoll img {
-    object-position: 50% bottom;
+  object-position: 50% bottom;
 }
 
 #grid-page .grid-item.persian {
-    grid-area: persian;
+  grid-area: persian;
 }
 
 #grid-page .grid-item.persian img {
-    object-position: 50% 80%;
+  object-position: 50% 80%;
 }
 
 #grid-page .grid-item.bengal {
-    grid-area: bengal;
+  grid-area: bengal;
 }
 
 #grid-page .grid-item.burmese {
-    grid-area: burmese;
+  grid-area: burmese;
 }
 
 #grid-page .grid-item.burmese img {
-    object-position: 50% 62%;
+  object-position: 50% 62%;
 }
 
 #grid-page .grid-item.siamese {
-    grid-area: siamese;
+  grid-area: siamese;
 }
 
 #grid-page .grid-item.siamese img {
-    object-position: 50% 20%;
+  object-position: 50% 20%;
 }
 
 #grid-page .grid-item > p {
-    font-size: 1.2em;
-    color: #666;
+  font-size: 1.2em;
+  color: #666;
 }
 
 @media (max-width: 700px) {
-    #grid-page {
-        grid-template-columns: repeat(2, 18em);
-        grid-template-rows: repeat(7, 12em);
-        grid-template-areas:
-            "norwegian-forest   british-shorhair"
-            "norwegian-forest   scottish-fold"
-            "bengal             scottish-fold"
-            "burmese            burmese"
-            "maine-coon         ragdoll"
-            "siamese            ragdoll"
-            "persian            persian"
-        ;
-        grid-gap: 1em;
-    }
+  #grid-page {
+    grid-template-columns: repeat(2, 18em);
+    grid-template-rows: repeat(7, 12em);
+    grid-template-areas:
+      'norwegian-forest   british-shorhair'
+      'norwegian-forest   scottish-fold'
+      'bengal             scottish-fold'
+      'burmese            burmese'
+      'maine-coon         ragdoll'
+      'siamese            ragdoll'
+      'persian            persian';
+    grid-gap: 1em;
+  }
 
-    #grid-page .grid-item.grid-item.persian img {
-        object-position: 10% 40%;
-    }
+  #grid-page .grid-item.grid-item.persian img {
+    object-position: 10% 40%;
+  }
 }
