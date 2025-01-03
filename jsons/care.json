@@ -1,0 +1,12 @@
+{
+  "norwegian-forest": { "activityFactor": 90 },
+  "british-shorthair": { "activityFactor": 70 },
+  "maine-coon": { "activityFactor": 90 },
+  "ragdoll": { "activityFactor": 70 },
+  "scottish-fold": { "activityFactor": 90 },
+  "bengal": { "activityFactor": 100 },
+  "persian": { "activityFactor": 70 },
+  "burmese": { "activityFactor": 90 },
+  "siamese": { "activityFactor": 100 },
+  "russian-blue": { "activityFactor": 80 }
+}
