@@ -7,7 +7,7 @@
     ✔ Modificare de proprietăți; @done(13.12.2024 15:04)
     ✔ Inputuri funcționale (de exemplu: input de tip text/range/number/radio/checkbox, select, textarea); @done(02.01.2025 20:27)
     ☐ Folosirea setTimeout și/sau setInterval;
-    ☐ Folosirea localStorage (să se păstreze în localStorage o colecție de elemente);
+    ✔ Folosirea localStorage (să se păstreze în localStorage o colecție de elemente); @done(03.01.2025 14:58)
     ✔ Folosirea a cel puțin unei metode din clasele: Math, Array, String, Date; @done(03.01.2025 14:47) (care.js Math.pow)
     ☐ Schimbarea aleatoare a valorilor unor proprietăți (de exemplu: culoare, dimensiuni, poziții);
     ✔ Folosirea proprietăților classList, target, currentTarget; @done(03.01.2025 14:50) (galery.js)

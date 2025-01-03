@@ -1,3 +1,20 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const savedBreed = localStorage.getItem('cat-breed');
+  const savedWeight = localStorage.getItem('cat-weight');
+
+  if (savedBreed) {
+    document.getElementById('cat-breeds').value = savedBreed;
+  }
+
+  if (savedWeight) {
+    document.getElementById('cat-weight').value = savedWeight;
+  }
+
+  if (savedBreed && savedWeight) {
+    confirmData();
+  }
+});
+
 async function confirmData() {
   const breed = document.getElementById('cat-breeds').value;
   const weight = document.getElementById('cat-weight').value;
@@ -9,6 +26,9 @@ async function confirmData() {
   }
 
   weightError.style.opacity = 0;
+
+  localStorage.setItem('cat-breed', breed);
+  localStorage.setItem('cat-weight', weight);
 
   const catInfo = document.getElementById('cat-info');
   catInfo.style.display = 'block';
