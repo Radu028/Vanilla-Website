@@ -6,9 +6,9 @@ function confirmData() {
   if (!weight) {
     weightError.style.opacity = 1;
     return;
-  } else {
-    weightError.style.display = 0;
   }
+  
+  weightError.style.opacity = 0;
 
   console.log('Breed:', breed);
   console.log('Weight:', weight);
