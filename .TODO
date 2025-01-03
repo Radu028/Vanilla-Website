@@ -2,18 +2,18 @@
     ✔ Fișier separat JavaScript; @done(13.12.2024 15:04)
     ✔ Modificarea stilului unui element sau al unui grup de elemente; @done(02.01.2025 20:27)
     ✔ Manevrarea DOM-ului (selectare după id, tag, clasă, selectorCSS); @done(13.12.2024 15:04)
-    ☐ Creare și ștergere de elemente;
+    ✔ Creare și ștergere de elemente; @done(03.01.2025 14:25)
     ✔ Folosirea și modificarea evenimentelor generate de mouse și tastatură; @done(02.01.2025 19:49)
     ✔ Modificare de proprietăți; @done(13.12.2024 15:04)
     ✔ Inputuri funcționale (de exemplu: input de tip text/range/number/radio/checkbox, select, textarea); @done(02.01.2025 20:27)
     ☐ Folosirea setTimeout și/sau setInterval;
     ☐ Folosirea localStorage (să se păstreze în localStorage o colecție de elemente);
-    ☐ Folosirea a cel puțin unei metode din clasele: Math, Array, String, Date;
+    ✔ Folosirea a cel puțin unei metode din clasele: Math, Array, String, Date; @done(03.01.2025 14:47) (care.js Math.pow)
     ☐ Schimbarea aleatoare a valorilor unor proprietăți (de exemplu: culoare, dimensiuni, poziții);
-    ☐ Folosirea proprietăților classList, target, currentTarget;
+    ✔ Folosirea proprietăților classList, target, currentTarget; @done(03.01.2025 14:50) (galery.js)
     ☐ Folosirea metodelor getComputedStyle și stopPropagation cu un sens relevant;
     ☐ Validarea datelor dintr-un formular folosind expresii regulate;
-    ☐ Cereri Ajax cu preluare date din fișier JSON;
+    ✔ Cereri Ajax cu preluare date din fișier JSON; @done(03.01.2025 14:27)
     ☐ Sesiuni: login+logout (folosind Storage/fișier JSON);
     ☐ Folosire Canvas și SVG;
     ✔ Elementele de JavaScript să fie integrate cu sens în cadrul proiectului. @done(13.12.2024 15:04)

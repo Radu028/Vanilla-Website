@@ -16,8 +16,12 @@ fetch('../jsons/galery.json')
       const breed = image.closest('.grid-item').classList[1];
       currentImageIndex[breed] = 0;
 
-      image.addEventListener('click', () => {
-        changeImage(image, breed);
+      // image.addEventListener('click', () => {
+      //   changeImage(image, breed);
+      // });
+
+      image.addEventListener('click', (event) => {
+        changeImage(event.target, breed);
       });
     });
 
