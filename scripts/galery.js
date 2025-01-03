@@ -23,11 +23,20 @@ fetch('../jsons/galery.json')
       image.addEventListener('click', (event) => {
         changeImage(event.target, breed);
       });
+
+      const randomInterval = Math.floor(Math.random() * 20000) + 10000;
+      setInterval(() => {
+        changeImage(image, breed);
+      }, randomInterval);
     });
 
     function changeImage(image, breed) {
-      currentImageIndex[breed] = (currentImageIndex[breed] + 1) % catImages[breed].length;
-      image.src = catImages[breed][currentImageIndex[breed]];
+      image.classList.add('fade-out');
+      setTimeout(() => {
+        currentImageIndex[breed] = (currentImageIndex[breed] + 1) % catImages[breed].length;
+        image.src = catImages[breed][currentImageIndex[breed]];
+        image.classList.remove('fade-out');
+      }, 300);
     }
   })
   .catch((error) => console.error('Error:', error));

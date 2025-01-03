@@ -110,6 +110,15 @@
   color: #666;
 }
 
+#grid-page img {
+  transition: opacity 300ms ease-in-out;
+  opacity: 1;
+}
+
+#grid-page img.fade-out {
+  opacity: 0;
+}
+
 @media (max-width: 700px) {
   #grid-page {
     grid-template-columns: repeat(2, 18em);
