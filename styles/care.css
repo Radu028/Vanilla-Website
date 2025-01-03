@@ -76,11 +76,12 @@ main section:last-child {
 main .specific-info section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4fr);
   grid-template-areas:
     'title title'
     'info info'
-    'breed weight';
+    'breed weight'
+    'button button';
   gap: 1em;
 }
 
@@ -140,15 +141,20 @@ main .specific-info section input:active {
   transform: scale(0.98);
 }
 
+.specific-info .info-group {
+  position: relative;
+  text-align: center;
+}
+
 .specific-info #weight-error {
-  /* TODO: Make this doesn't move the input item */
   color: red;
   opacity: 0;
   transition: opacity 0.3s;
 }
 
 .specific-info button {
-  /* TODO: Centralize this */
+  grid-area: button;
+  width: 80%;
   background: #ffd966;
   border: none;
   border-radius: 4px;
@@ -156,7 +162,7 @@ main .specific-info section input:active {
   cursor: pointer;
   font-family: 'Akrobat SemiBold', sans-serif;
   font-size: 1.25em;
-  margin-top: 1em;
+  margin: 0 auto;
   padding: 0.5em 1em;
   transition: transform 0.3s;
 }
