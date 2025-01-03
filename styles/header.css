@@ -5,7 +5,7 @@ header {
 }
 
 header h1 {
-  font-family: 'Akrobat Black';
+  font-family: 'Akrobat Black', sans-serif;
   font-size: 3em;
   padding: 0.8em;
   margin: 0;

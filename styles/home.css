@@ -1,19 +1,19 @@
 main h2 {
-  font-family: 'Akrobat ExtraBold';
+  font-family: 'Akrobat ExtraBold', sans-serif;
   font-size: 2rem;
   color: #333;
   text-align: center;
 }
 
 main h3 {
-  font-family: 'Akrobat Bold';
+  font-family: 'Akrobat Bold', sans-serif;
   font-size: 1.5rem;
   color: #333;
   text-align: center;
 }
 
 main p {
-  font-family: 'Akrobat';
+  font-family: 'Akrobat', sans-serif;
   font-size: 1.1rem;
   color: #666;
   text-align: center;
@@ -22,7 +22,7 @@ main p {
 }
 
 main table {
-  font-family: 'Akrobat';
+  font-family: 'Akrobat', sans-serif;
   font-size: 1.15rem;
   color: #555;
   text-align: left;
@@ -61,7 +61,7 @@ main table tr:hover td {
 
 main .animate {
   /* display: inline-block; */
-  font-family: 'Akrobat';
+  font-family: 'Akrobat', sans-serif;
   display: flex;
   justify-content: center;
   white-space: pre;

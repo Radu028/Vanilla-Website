@@ -1,16 +1,16 @@
 main h1 {
-  font-family: 'Akrobat Bold';
+  font-family: 'Akrobat Bold', sans-serif;
   text-align: center;
 }
 
 main h2 {
-  font-family: 'Akrobat Bold';
+  font-family: 'Akrobat Bold', sans-serif;
   text-align: center;
   margin-top: 4em;
 }
 
 main > p {
-  font-family: 'Akrobat';
+  font-family: 'Akrobat', sans-serif;
   font-size: 1.1em;
   margin: 2em 10em;
 }
@@ -49,19 +49,19 @@ main > p {
 }
 
 #about-grid .row .info h3 {
-  font-family: 'Akrobat Bold';
+  font-family: 'Akrobat Bold', sans-serif;
   font-size: 1.8em;
   text-align: left;
 }
 
 #about-grid .row .info ul {
-  font-family: 'Akrobat';
+  font-family: 'Akrobat', sans-serif;
   font-size: 1.15em;
   text-align: left;
 }
 
 #about-grid .row .info ul span {
-  font-family: 'Akrobat Bold';
+  font-family: 'Akrobat Bold', sans-serif;
 }
 
 #about-grid .row:nth-child(odd) {

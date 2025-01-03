@@ -18,7 +18,7 @@
   color: #686868;
   text-decoration: none;
   position: relative;
-  font-family: 'Akrobat';
+  font-family: 'Akrobat', sans-serif;
   font-size: 1.2em;
   margin: min(1.5%, 1rem);
   box-sizing: border-box;
@@ -27,7 +27,7 @@
 }
 
 .navbar .page:hover {
-  font-family: 'Akrobat Bold';
+  font-family: 'Akrobat Bold', sans-serif;
   transform: scale(1.05);
   color: black;
 }
@@ -54,7 +54,7 @@
 }
 
 .navbar .page .active {
-  font-family: 'Akrobat SemiBold';
+  font-family: 'Akrobat SemiBold', sans-serif;
   color: rgb(41, 41, 41);
 }
 
@@ -71,7 +71,7 @@
   position: absolute;
   background-color: #f4f4f4;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   border-radius: 0.3em;
   z-index: 1;
   flex-direction: column;
@@ -85,13 +85,13 @@
   text-decoration: none;
   display: block;
   text-align: left;
-  font-family: 'Akrobat';
+  font-family: 'Akrobat', sans-serif;
   font-size: 1em;
 }
 
 .dropdown-content a:hover {
   background-color: #ddd;
-  font-family: 'Akrobat Bold';
+  font-family: 'Akrobat Bold', sans-serif;
   border-radius: 0.3em;
 }
 
@@ -100,6 +100,6 @@
 }
 
 .navbar .dropdown .active {
-  font-family: 'Akrobat SemiBold';
+  font-family: 'Akrobat SemiBold', sans-serif;
   color: rgb(41, 41, 41);
 }

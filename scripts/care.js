@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   const savedBreed = localStorage.getItem('cat-breed');
   const savedWeight = localStorage.getItem('cat-weight');
 
@@ -11,7 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (savedBreed && savedWeight) {
-    confirmData();
+    try {
+      await confirmData();
+    } catch (error) {
+      console.error('Error:', error);
+    }
   }
 });
 
@@ -21,11 +25,11 @@ async function confirmData() {
   const weightError = document.getElementById('weight-error');
 
   if (!weight) {
-    weightError.style.opacity = 1;
+    weightError.style.opacity = '1';
     return;
   }
 
-  weightError.style.opacity = 0;
+  weightError.style.opacity = '0';
 
   localStorage.setItem('cat-breed', breed);
   localStorage.setItem('cat-weight', weight);
@@ -62,10 +66,10 @@ const calculateFood = async (breed, weight) => {
     })
     .then((breeds) => {
       if (!breeds[breed]) {
-        throw new Error(`Rasa ${breed} nu a fost gasita.`);
+        throw new Error(`Rasa ${breed} nu a fost găsita.`);
       }
 
-      const activityFactor = breeds[breed].activityFactor;
+      const activityFactor = breeds[breed]['activityFactor'];
       const caloricNeeds = activityFactor * Math.pow(weight, 0.75);
 
       const dryFood = (caloricNeeds / 400) * 100;
@@ -74,7 +78,7 @@ const calculateFood = async (breed, weight) => {
       return {
         caloricNeeds: Math.round(caloricNeeds),
         dryFood: Math.round(dryFood),
-        wetFood: Math.round(wetFood),
+        wetFood: Math.round(wetFood)
       };
     })
     .catch((error) => console.error('Error:', error));

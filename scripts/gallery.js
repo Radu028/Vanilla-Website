@@ -1,4 +1,4 @@
-fetch('../jsons/galery.json')
+fetch('../jsons/gallery.json')
   .then((response) => {
     if (response.ok && response.status === 200) {
       return response.json();
