@@ -42,12 +42,12 @@ async function confirmData() {
 
   try {
     const foodInfo = await calculateFood(breed, weight);
-    console.log(foodInfo.caloricNeeds);
     catInfoContent.innerHTML = `
       <h4>Informații nutriționale zilnice</h4>
       <p>Necesar caloric: ${foodInfo.caloricNeeds} kcal</p>
       <p>Mâncare uscată: ${foodInfo.dryFood} g</p>
       <p>Mâncare umedă: ${foodInfo.wetFood} g</p>
+      <br/>
     `;
   } catch (error) {
     console.error('Error:', error);
@@ -78,7 +78,7 @@ const calculateFood = async (breed, weight) => {
       return {
         caloricNeeds: Math.round(caloricNeeds),
         dryFood: Math.round(dryFood),
-        wetFood: Math.round(wetFood)
+        wetFood: Math.round(wetFood),
       };
     })
     .catch((error) => console.error('Error:', error));
