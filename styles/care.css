@@ -3,26 +3,26 @@ main {
   color: #333;
   line-height: 1.6;
   text-align: center;
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: min(900px, 90%);
+  margin: 1rem auto;
   padding: 20px;
 }
 
 main h2 {
-  font-size: 2rem;
+  font-size: clamp(1rem, 2vw + 1.05rem, 2rem);
   margin-bottom: 20px;
   color: #b68d00;
 }
 
 main h3 {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1.5vw + 0.9rem, 1.6rem);
   margin-top: 20px;
   color: #3f3823;
   text-transform: uppercase;
 }
 
 main p {
-  font-size: 1.15rem;
+  font-size: clamp(0.8rem, 1vw + 0.8rem, 1.15rem);
   margin: 10px 0;
   text-align: justify;
 }
@@ -32,11 +32,17 @@ main ul {
   padding-left: 20px;
   text-align: left;
   margin: 10px auto;
+  color: #666;
 }
 
 main ul li {
   margin-bottom: 1em;
-  font-size: 1.1rem;
+  font-size: clamp(0.8rem, 1vw + 0.8rem, 1.15rem);
+}
+
+main ul li strong {
+  font-family: 'Akrobat Bold', sans-serif;
+  color: #464646;
 }
 
 main .general-info,
@@ -61,7 +67,7 @@ main a:hover {
 main section {
   padding-bottom: 1em;
   border-bottom: 1px solid #ffd966;
-  margin: 0 2em;
+  margin: 0 2rem;
 }
 
 main section:last-child {
@@ -79,27 +85,26 @@ main .specific-info section {
     'info info'
     'breed weight'
     'button button';
-  gap: 1em;
+  grid-gap: 1rem;
 }
 
-main .specific-info section h3 {
+main .specific-info h3 {
   grid-area: title;
-  /* text-align: center; */
 }
 
-main .specific-info section p {
+main .specific-info p {
   grid-area: info;
 }
 
-main .specific-info section .input-group:first-child {
+main .specific-info .input-group:first-child {
   grid-area: breed;
 }
 
-main .specific-info section .input-group:last-child {
+main .specific-info .input-group:last-child {
   grid-area: weight;
 }
 
-main .specific-info section .input-group {
+main .specific-info .input-group {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
@@ -108,19 +113,20 @@ main .specific-info section .input-group {
   gap: 0.2em;
 }
 
-main .specific-info section label {
+main .specific-info label {
   font-family: 'Akrobat SemiBold', sans-serif;
-  font-size: 1.25em;
+  font-size: clamp(0.8rem, 1vw + 0.8rem, 1.15rem);
   grid-area: label;
 }
 
-main .specific-info section select,
-main .specific-info section input {
+main .specific-info select,
+main .specific-info input {
   grid-area: input;
   border: 1px solid #ffd966;
   border-radius: 4px;
   font-family: 'Akrobat', sans-serif;
-  font-size: 1.1em;
+  font-size: clamp(0.8rem, 1vw + 0.8rem, 1.15rem);
+  padding: 0.2em;
   width: 16em;
   height: 2em;
   margin: 0 auto;
@@ -128,17 +134,17 @@ main .specific-info section input {
   transition: transform 0.3s;
 }
 
-main .specific-info section select:focus,
-main .specific-info section input:focus {
+main .specific-info select:focus,
+main .specific-info input:focus {
   outline-color: #e6ac00;
 }
 
-main .specific-info section select:active,
-main .specific-info section input:active {
+main .specific-info select:active,
+main .specific-info input:active {
   transform: scale(0.98);
 }
 
-.specific-info .info-group {
+main .specific-info .info-group {
   position: relative;
   text-align: center;
 }
@@ -181,18 +187,16 @@ main .specific-info section input:active {
   text-align: center;
 }
 
-@media (max-width: 700px) {
-  main {
-    width: 80%;
-  }
-
+@media (max-width: 768px) {
   main .specific-info section {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas:
       'title'
       'info'
       'breed'
-      'weight';
+      'weight'
+      'button';
+    margin: 0;
   }
 }

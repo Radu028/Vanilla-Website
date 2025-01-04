@@ -13,3 +13,27 @@ body {
 main {
   flex: 1;
 }
+
+main h2 {
+  font-family: 'Akrobat ExtraBold', sans-serif;
+  font-size: clamp(1rem, 1vw + 1rem, 2rem);
+  color: #333;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+main h3 {
+  font-family: 'Akrobat Bold', sans-serif;
+  font-size: clamp(1rem, 1vw + 0.9rem, 1.6rem);
+  color: #333;
+  text-align: center;
+}
+
+main p {
+  font-family: 'Akrobat', sans-serif;
+  font-size: 1.1rem;
+  color: #666;
+  text-align: center;
+  margin: 0 12vw 3rem;
+  line-height: 1.5;
+}
