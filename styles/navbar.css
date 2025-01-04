@@ -1,17 +1,22 @@
 .navbar {
-  z-index: 10;
-  height: 1.5em;
-  width: 98.9%;
+  z-index: 2;
   top: 0;
+  height: auto;
   border-bottom: 1px solid #979797;
   background-color: #f4f4f4;
-  padding: 0.5em;
+  padding: min(1.1rem, 5%) 0;
   text-align: center;
   position: sticky;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.navbar::-webkit-scrollbar {
+  display: none;
 }
 
 .navbar .page {
@@ -19,8 +24,8 @@
   text-decoration: none;
   position: relative;
   font-family: 'Akrobat', sans-serif;
-  font-size: 1.2em;
-  margin: min(1.5%, 1rem);
+  font-size: clamp(0.8rem, 1vw + 0.8rem, 1.2rem);
+  margin: min(4vw, 1rem);
   box-sizing: border-box;
   will-change: transform, color;
   transition: all 200ms ease-in-out;
