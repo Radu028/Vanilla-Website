@@ -1,11 +1,11 @@
 {
-  "norwegian-forest": ["../img/norwegian_forest.jpg", "../img/norwegian_forest_2.jpg"],
-  "british-shorthair": ["../img/british_shorthair.jpg", "../img/british_shorthair_2.jpg"],
-  "maine-coon": ["../img/maine_coon.jpg", "../img/maine_coon_2.jpg"],
-  "ragdoll": ["../img/ragdoll.jpg", "../img/ragdoll_2.jpg"],
-  "scottish-fold": ["../img/scottish_fold.jpg", "../img/scottish_fold_2.jpg"],
-  "bengal": ["../img/bengal.jpg", "../img/bengal_2.jpg"],
-  "persian": ["../img/persian.jpg", "../img/persian_2.jpg"],
-  "burmese": ["../img/burmese.jpg", "../img/burmese_2.jpg"],
-  "siamese": ["../img/siamese.jpg", "../img/siamese_2.jpg"]
+  "norwegian-forest": 3,
+  "british-shorthair": 3,
+  "maine-coon": 3,
+  "ragdoll": 3,
+  "scottish-fold": 3,
+  "bengal": 3,
+  "persian": 3,
+  "burmese": 3,
+  "siamese": 3
 }

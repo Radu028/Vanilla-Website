@@ -9,7 +9,7 @@
     ✔ Folosirea setTimeout și/sau setInterval; @done(03.01.2025 15:16)
     ✔ Folosirea localStorage (să se păstreze în localStorage o colecție de elemente); @done(03.01.2025 14:58)
     ✔ Folosirea a cel puțin unei metode din clasele: Math, Array, String, Date; @done(03.01.2025 14:47) (care.js Math.pow)
-    ☐ Schimbarea aleatoare a valorilor unor proprietăți (de exemplu: culoare, dimensiuni, poziții);
+    √☐ Schimbarea aleatoare a valorilor unor proprietăți (de exemplu: culoare, dimensiuni, poziții);
     ✔ Folosirea proprietăților classList, target, currentTarget; @done(03.01.2025 14:50) (gallery.js)
     ☐ Folosirea metodelor getComputedStyle și stopPropagation cu un sens relevant;
     ☐ Validarea datelor dintr-un formular folosind expresii regulate;

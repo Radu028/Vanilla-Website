@@ -29,6 +29,10 @@ async function confirmData() {
     return;
   }
 
+  if (weightError.style.opacity === '1') {
+    weightError.style.opacity = '0';
+  }
+
   weightError.style.opacity = '0';
 
   localStorage.setItem('cat-breed', breed);

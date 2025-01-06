@@ -10,11 +10,13 @@ fetch('../jsons/gallery.json')
     const gridPage = document.getElementById('grid-page');
     const images = gridPage.querySelectorAll('.grid-item img');
 
-    const currentImageIndex = {};
+    const randomImageIndexes = {};
 
     images.forEach((image) => {
       const breed = image.closest('.grid-item').classList[1];
-      currentImageIndex[breed] = 0;
+      image.src = imgSrc(breed, 0);
+      image.alt = imgAlt(breed, 0, catImages[breed]);
+      randomImageIndexes[breed] = 0;
 
       // image.addEventListener('click', () => {
       //   changeImage(image, breed);
@@ -24,7 +26,7 @@ fetch('../jsons/gallery.json')
         changeImage(event.target, breed);
       });
 
-      const randomInterval = Math.floor(Math.random() * 20000) + 10000;
+      const randomInterval = Math.floor(Math.random() * 20000) + 10000; // 10sec - 30sec
       setInterval(() => {
         changeImage(image, breed);
       }, randomInterval);
@@ -33,10 +35,24 @@ fetch('../jsons/gallery.json')
     function changeImage(image, breed) {
       image.classList.add('fade-out');
       setTimeout(() => {
-        currentImageIndex[breed] = (currentImageIndex[breed] + 1) % catImages[breed].length;
-        image.src = catImages[breed][currentImageIndex[breed]];
+        let randomIndex;
+        do {
+          randomIndex = Math.floor(Math.random() * catImages[breed]);
+        } while (randomIndex === randomImageIndexes[breed]);
+        randomImageIndexes[breed] = randomIndex;
+
+        image.src = imgSrc(breed, randomIndex);
+        image.alt = imgAlt(breed, randomIndex, catImages[breed]);
         image.classList.remove('fade-out');
       }, 300);
     }
   })
   .catch((error) => console.error('Error:', error));
+
+function imgSrc(breed, index) {
+  return `../img/${breed}/${index}.jpg`;
+}
+
+function imgAlt(breed, index, total) {
+  return `Rasa ${breed} - Imagine ${index + 1} din ${total}`
+}
