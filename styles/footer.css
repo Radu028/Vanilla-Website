@@ -5,4 +5,5 @@ footer {
   font-family: 'Akrobat', sans-serif;
   padding: min(0.5rem, 1%);
   bottom: 0;
+  flex-shrink: 0;
 }
