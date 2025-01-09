@@ -1,7 +1,7 @@
 .navbar {
   z-index: 10;
   top: 0;
-  height: auto;
+  max-height: 1.6rem;
   border-bottom: 1px solid #979797;
   background-color: #f4f4f4;
   padding: min(0.1rem, 4%) 0;
