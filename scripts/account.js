@@ -61,6 +61,7 @@ function updateInterface(username) {
     <main>
       <h2>Bine ai venit, ${username}!</h2>
       <p>Detalii despre contul tău...</p>
+      <button id="logout-btn">Log out</button>
     </main>
     
     <footer>
@@ -68,6 +69,11 @@ function updateInterface(username) {
       <p>Acest proiect a fost făcut de Popa Radu-Stefan</p>
     </footer>
   `;
+
+  document.getElementById('logout-btn').addEventListener('click', function () {
+    localStorage.removeItem('loggedInUser');
+    location.reload();
+  });
 }
 
 document.addEventListener('DOMContentLoaded', function () {
