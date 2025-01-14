@@ -62,6 +62,19 @@ function updateInterface(username) {
       <h2>Bine ai venit, ${username}!</h2>
       <p>Detalii despre contul tău...</p>
       <button id="logout-btn">Log out</button>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </main>
     
     <footer>

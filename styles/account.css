@@ -49,3 +49,20 @@
   transform-origin: bottom left;
   color: black;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 4em auto;
+}
+
+main #logout-btn {
+  margin: 1em auto;
+  padding: 0.5em;
+  font-family: 'Akrobat SemiBold', sans-serif;
+  font-size: 1.2em;
+  border-radius: 0.5em;
+  border: 2px solid #979797;
+  background-color: #f4f4f4;
+  transition: background-color 200ms ease-in-out;
+}
