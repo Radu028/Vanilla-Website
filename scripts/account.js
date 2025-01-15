@@ -73,6 +73,7 @@ function updateInterface(username) {
     
     <main>
       <h2>Bine ai venit, ${username}!</h2>
+      <img src="../img/cat-svg.svg" alt="Cat icon" width="80" style="margin: 0 auto;">
       <p>Detalii despre contul tău...</p>
       <button id="logout-btn">Log out</button>
 
