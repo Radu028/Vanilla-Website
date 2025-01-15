@@ -15,5 +15,5 @@
     ✔ Validarea datelor dintr-un formular folosind expresii regulate; @done(15.01.2025 16:52)
     ✔ Cereri Ajax cu preluare date din fișier JSON; @done(03.01.2025 14:27)
     ✔ Sesiuni: login+logout (folosind Storage/fișier JSON); @done(14.01.2025 22:08)
-    ☐ Folosire Canvas și SVG;
+    ✔ Folosire Canvas și SVG; @done(15.01.2025 17:50)
     ✔ Elementele de JavaScript să fie integrate cu sens în cadrul proiectului. @done(13.12.2024 15:04)
