@@ -1,10 +1,9 @@
 .navbar {
   z-index: 10;
   top: 0;
-  max-height: 1.6rem;
   border-bottom: 1px solid #979797;
   background-color: #f4f4f4;
-  padding: min(0.1rem, 4%) 0;
+  padding: min(1rem, 4%) 0;
   text-align: center;
   position: sticky;
   display: flex;
@@ -62,7 +61,6 @@
   position: relative;
   display: inline-block;
   line-height: 0;
-  margin: 1em;
   width: 8em;
   z-index: 10;
 }
