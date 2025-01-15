@@ -54,5 +54,27 @@ function imgSrc(breed, index) {
 }
 
 function imgAlt(breed, index, total) {
-  return `Rasa ${breed} - Imagine ${index + 1} din ${total}`
+  return `Rasa ${breed} - Imagine ${index + 1} din ${total}`;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const gridItems = document.querySelectorAll('.grid-item');
+
+  gridItems.forEach((item) => {
+    item.addEventListener('click', (event) => {
+      event.stopPropagation();
+
+      const computedStyle = getComputedStyle(item);
+      const backgroundColor = computedStyle.backgroundColor;
+      const position = computedStyle.backgroundPosition;
+
+      alert(
+        `Ai facut click pe o imagine cu rasă ${item.classList[1]} cu culoare de fundal ${backgroundColor} și poziție ${position}.`
+      );
+    });
+  });
+
+  document.body.addEventListener('click', () => {
+    alert('Ai făcut click pe corpul paginii!');
+  });
+});
