@@ -4,6 +4,19 @@ document.getElementById('login-form').addEventListener('submit', function (event
   const username = document.getElementById('username').value;
   const password = document.getElementById('password').value;
 
+  const usernameRegex = /^[a-zA-Z0-9]{3,20}$/;
+  const passwordRegex = /^[a-zA-Z0-9]{4,20}$/;
+
+  if (!usernameRegex.test(username)) {
+    alert('Nume de utilizator invalid. Trebuie să conțină între 3 și 20 de caractere alfanumerice.');
+    return;
+  }
+
+  if (!passwordRegex.test(password)) {
+    alert('Parolă invalidă. Trebuie să conțină între 4 și 20 de caractere alfanumerice.');
+    return;
+  }
+
   fetch('../jsons/account.json')
     .then((response) => {
       if (!response.ok || response.status !== 200) {
